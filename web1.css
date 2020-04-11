@@ -121,7 +121,7 @@ header .logo a
    text-align: left;
    margin:30px 0 0 250px;
    font-size: 25px;
-   font:Roboto Slab,serif;
+   font-family:'Mandali';
 
 }
 
@@ -137,6 +137,7 @@ header .logo a
     display: inline-block;
     margin:10px 100px 0 30px;
     color:white; 
+    font-family:'Roboto Slab';
 }
 
 
