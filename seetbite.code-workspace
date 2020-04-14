@@ -2,12 +2,10 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "E:\\Github\\Learn"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "vsc"
+		"liveServer.settings.multiRootWorkspaceName": "vsc",
+		"liveServer.settings.port": 5501
 	}
 }
