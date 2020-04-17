@@ -7,7 +7,7 @@
 
        }
 
-       function addToCartClicked(event) 
+       function addTocartclicked(event) 
        {
            var button = event.target
            console.log('click')
