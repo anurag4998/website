@@ -7,6 +7,8 @@
          SWEET BITE         
         </title>
         <link rel = "stylesheet" href ="web1.css">
+        
+        
     </head>
 
     <body>
@@ -49,7 +51,10 @@
 
             </ul>
         </div>
-    </section>        
+        
+
+    </section>       
+    
     <footer>
             <div class="info">
                <h3>Information</h3>
@@ -99,6 +104,33 @@
    
                
    </footer>
+  
 
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAeTeEoSSxzeG08_wWxphSsDBHtYWqm8mQ",
+    authDomain: "newtrolleymanager.firebaseapp.com",
+    databaseURL: "https://newtrolleymanager.firebaseio.com",
+    projectId: "newtrolleymanager",
+    storageBucket: "newtrolleymanager.appspot.com",
+    messagingSenderId: "965471042365",
+    appId: "1:965471042365:web:fa2b68673267012908a354",
+    measurementId: "G-DCEH6DHSMQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src = "./app.js"> </script>
+<script src=  "./cart.js"></script>
     </body>
 </html>
