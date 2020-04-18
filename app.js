@@ -14,7 +14,7 @@ rootRef.orderByKey().on('value', snapshot =>
 {
 
   let variable = snapshot.val();
-  console.log(variable)
+  if(variable.rice_basket.Value == 1)  
    {
         var div = document.createElement('div');
         div.setAttribute('id', "cartitem");
@@ -56,8 +56,10 @@ rootRef.orderByKey().on('value', snapshot =>
 
 
         var li = document.createElement('li');
-        li.setAttribute('id', "subtotal");
-        content2.appendChild(li)
+        content2.appendChild(li).appendChild(subtotal)
+        subtotal.setAttribute('id', "subtotal");
+
+        initialcartvalue()
 
 
   }
@@ -83,7 +85,10 @@ rootRef.orderByKey().on('value', snapshot =>
 button1.addEventListener('click',incrementvalue)
 button2.addEventListener('click',decrementvalue)
 
-
+function initialcartvalue()
+{
+  document.getElementById("subtotal").innerText = parseInt(document.getElementById("input").innerText) * parseInt(document.getElementById("unitprice").innerText)
+}
 function incrementvalue(event)
 {
   var button = event.target
