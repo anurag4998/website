@@ -122,7 +122,7 @@ section h2
     text-align: left;
     margin:60px 0 0 160px;
 }
-#itemdescription
+.itemdescription
 {
     height:40px;
     background-color: #555;
@@ -137,7 +137,52 @@ section ul li
 }
 
 
+#cartitem
+{
+    height: 40px;
+    width:80%;
+    margin: 10px 100px 0 130px;
+}
 
+#cartrow li
+{
+    margin: 20px 160px 0 10px;
+    color:#333;
+    font-family: Celias,Helvetica;
+    height: 20px;
+
+
+}
+
+#cartrow li button
+{
+    border-radius: 50px;
+    border: 0.50px solid #e96125;
+    font-family: Celias,Helvetica;
+    font-size: 16px;
+    color: #666;
+    width: 25px;
+    height: 25px;
+}
+
+#cartrow li text
+{
+    width: 25px;
+    height: 25px;
+    margin: 7px 8px 0 8px;
+    font-size: 18px;
+
+}
+
+#subtotal
+{
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    color:#333;
+    font-family: Celias,Helvetica;
+
+}
 
 /* *********************************************************************** */
 
