@@ -8,7 +8,8 @@
          
         </title>
         <link rel = "stylesheet" href ="web2.css">
-        <script src = "./cart.js"></script>
+
+
     </head>
 
     <body>
@@ -74,7 +75,7 @@
 
                         </div>
                         <div class="productname">
-                             Daawat Rozana Super Basmati Rice  
+                             Daawat Rozana 
                          </div>    
 
                          <div class = "productquantity">
@@ -153,6 +154,26 @@
             </div>
 
         </section>
+        <script type="text/javascript">
+        	function addtocartclicked(event) 
+        {
+			var button = event.target
+            console.log('click')
+            var shopitem = button.parentElement.parentElement.parentElement
+            var product_name = shopitem.getElementsByClassName('productname')[0].innerText
+            var product_price = shopitem.getElementsByClassName('productcost')[0].innerText
+		}
+
+		
+			let addtocart = document.getElementsByClassName("shopitembutton");
+
+            for (b of addtocart) 
+            {
+				b.addEventListener('click',addtocartclicked)
+			}
+		
+</script>
+
 
       
        
@@ -205,6 +226,8 @@
        
                    
        </footer>
+       
+
     </body>
 </html>
 
