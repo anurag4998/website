@@ -83,6 +83,7 @@ rootRef.orderByKey().on('value', snapshot =>
 button1.addEventListener('click',incrementvalue)
 button2.addEventListener('click',decrementvalue)
 
+
 function incrementvalue(event)
 {
   var button = event.target
@@ -111,14 +112,8 @@ function decrementvalue(event)
 
 function total()
 {
-
-  var mul = parseInt(document.getElementById("input").innerText)
-  var product = mul * parseInt(document.getElementById("unitprice").innerText)
+  var product = parseInt(document.getElementById("input").innerText) * parseInt(document.getElementById("unitprice").innerText)
   document.getElementById("subtotal").innerText = product
 
 }
-
-
- 
-
 
