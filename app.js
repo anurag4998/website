@@ -1,5 +1,6 @@
 const database = firebase.database();
-const rootRef = database.ref()
+const rootRef = database.ref('rice_basket')
+const rootRef1 = database.ref('sugar_basket')
 
 const preObject = document.getElementById('object');
 
@@ -7,25 +8,51 @@ const preObject = document.getElementById('object');
 
 const content1 = document.getElementById("cartitem")
 
-
-               
+         
       rootRef.orderByKey().on('value', snapshot => 
       {
         
         let variable = snapshot.val();
-        if(variable.rice_basket.Value == 1)  
+        
+        if(variable.Value == 1)  
         {
           checkrice()
         }
-        
-        //////////////////////////////////////////////////////////////////////////
-        if(variable.sugar_basket.Value == 1)
+        else if(variable.Value != 1)
+        {
+          document.getElementById("cart").innerHTML = ``
+        }
+      });
+       //// //////////////////////////////////////////////////////////////////////////
+        rootRef1.orderByKey().on('value', snapshot => 
+        {
+          let variable = snapshot.val();
+        if(variable.Value == 1)
         {
             checksugar()  
             
+        }
+        else if(variable.Value != 1)
+        {
+          document.getElementById("cart").innerHTML = ``
         }       
-  
-        });
+      });
+
+    
+        var button = document.getElementById("checkout")
+        button.addEventListener('click', e=>
+        {
+          rootRef.set
+          ({
+           Value:0,
+           ID:'ri'
+         })
+         rootRef1.set({
+          Value:0,
+          ID:'su'
+        })
+        })
+       
  
 
 /////////////////////////////////////////////////////////////////////////////////////
