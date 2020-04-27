@@ -52,8 +52,9 @@ const content1 = document.getElementById("cartitem")
           ID:'su'
         })
         })
-       
- 
+      
+       console.log(localStorage.getItem("name"))
+      
 
 /////////////////////////////////////////////////////////////////////////////////////
 function checkrice()

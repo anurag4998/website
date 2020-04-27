@@ -1,19 +1,21 @@
+        	function addtocartclicked(event) 
+        {
+			var button = event.target
+            var shopitem = button.parentElement.parentElement.parentElement
+            var product_name = shopitem.getElementsByClassName('productname')[0].innerText
+            var product_price = shopitem.getElementsByClassName('productcost')[0].innerText
+            var productquantity = shopitem.getElementsByClassName('productquantity')[0].innerText
 
-       var addtocart = document.getElementsByClassName('shopitembutton')
-       for(var i = 0; i< addtocart.length ;i++)
-       {
-           var button = addtocart[i]
-           button.addEventListener('click',addtocartclicked)
+            localStorage.setItem("name",product_name)
+            localStorage.setItem("price",product_price)
+            localStorage.setItem("quantity",productquantity)
+            
+		}
 
-       }
-
-       function addTocartclicked(event) 
-       {
-           var button = event.target
-           console.log('click')
-       }
-
-
-   
-
-
+		
+			let addtocart = document.getElementsByClassName("shopitembutton");
+            for (b of addtocart) 
+            {
+				b.addEventListener('click',addtocartclicked)
+			}
+		
