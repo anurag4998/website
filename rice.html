@@ -158,10 +158,11 @@
         	function addtocartclicked(event) 
         {
 			var button = event.target
-            console.log('click')
             var shopitem = button.parentElement.parentElement.parentElement
             var product_name = shopitem.getElementsByClassName('productname')[0].innerText
             var product_price = shopitem.getElementsByClassName('productcost')[0].innerText
+            console.log(product_name)
+            console.log(product_price)
 		}
 
 		
